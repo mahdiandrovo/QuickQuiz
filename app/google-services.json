@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "178814449567",
+    "project_id": "quickquiz-d4ac5",
+    "storage_bucket": "quickquiz-d4ac5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178814449567:android:317e830418c1d614f32faa",
+        "android_client_info": {
+          "package_name": "com.drovo.quickquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "178814449567-8iedjdn9i37bqnq3ijsudtkdf074hiln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB62e6Q0xNPHtTf7nwdHQp82PiZwERvBoE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "178814449567-8iedjdn9i37bqnq3ijsudtkdf074hiln.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

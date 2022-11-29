@@ -1,8 +1,10 @@
-package com.drovo.quickquiz;
+package com.drovo.quickquiz.view.ui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.drovo.quickquiz.R;
 
 public class MainActivity extends AppCompatActivity {
 

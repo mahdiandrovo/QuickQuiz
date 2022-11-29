@@ -7,16 +7,19 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.drovo.quickquiz.View.SplashFragment"
+        android:name="com.drovo.quickquiz.view.ui.fragment.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
             android:id="@+id/action_splashFragment_to_signInFragment"
             app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_listFragment"
+            app:destination="@id/listFragment" />
     </fragment>
     <fragment
         android:id="@+id/signInFragment"
-        android:name="com.drovo.quickquiz.View.SignInFragment"
+        android:name="com.drovo.quickquiz.view.ui.fragment.SignInFragment"
         android:label="fragment_sign_in"
         tools:layout="@layout/fragment_sign_in" >
         <action
@@ -28,7 +31,7 @@
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="com.drovo.quickquiz.View.SignUpFragment"
+        android:name="com.drovo.quickquiz.view.ui.fragment.SignUpFragment"
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up" >
         <action
@@ -37,7 +40,7 @@
     </fragment>
     <fragment
         android:id="@+id/listFragment"
-        android:name="com.drovo.quickquiz.View.ListFragment"
+        android:name="com.drovo.quickquiz.view.ui.fragment.ListFragment"
         android:label="fragment_list"
         tools:layout="@layout/fragment_list" >
         <action
@@ -46,7 +49,7 @@
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.drovo.quickquiz.View.DetailFragment"
+        android:name="com.drovo.quickquiz.view.ui.fragment.DetailFragment"
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail" >
         <action
@@ -55,7 +58,7 @@
     </fragment>
     <fragment
         android:id="@+id/quizFragment"
-        android:name="com.drovo.quickquiz.View.QuizFragment"
+        android:name="com.drovo.quickquiz.view.ui.fragment.QuizFragment"
         android:label="fragment_quiz"
         tools:layout="@layout/fragment_quiz" >
         <action
@@ -64,7 +67,7 @@
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
-        android:name="com.drovo.quickquiz.View.ResultFragment"
+        android:name="com.drovo.quickquiz.view.ui.fragment.ResultFragment"
         android:label="fragment_result"
         tools:layout="@layout/fragment_result" >
         <action

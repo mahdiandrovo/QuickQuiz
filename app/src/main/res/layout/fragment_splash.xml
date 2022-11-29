@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/purple_200"
-    tools:context=".View.SplashFragment">
+    tools:context=".view.ui.fragment.SplashFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout

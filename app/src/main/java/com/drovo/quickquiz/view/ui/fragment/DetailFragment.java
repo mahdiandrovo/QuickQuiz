@@ -1,4 +1,4 @@
-package com.drovo.quickquiz.View;
+package com.drovo.quickquiz.view.ui.fragment;
 
 import android.os.Bundle;
 

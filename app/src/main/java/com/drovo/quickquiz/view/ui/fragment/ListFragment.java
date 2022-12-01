@@ -26,7 +26,7 @@ import com.drovo.quickquiz.viewmodel.QuizListViewModel;
 
 import java.util.List;
 
-public class ListFragment extends Fragment {
+public class ListFragment extends Fragment implements QuizListAdapter.OnItemClickedListener {
 
     private NavController navController;
     private QuizListViewModel viewModel;
@@ -61,7 +61,7 @@ public class ListFragment extends Fragment {
         recyclerView_quizList.setHasFixedSize(true);
         recyclerView_quizList.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        adapter = new QuizListAdapter();
+        adapter = new QuizListAdapter(this);
         recyclerView_quizList.setAdapter(adapter);
 
         viewModel.getQuizListLiveData().observe(getViewLifecycleOwner(), new Observer<List<QuizListModel>>() {
@@ -72,5 +72,12 @@ public class ListFragment extends Fragment {
                 adapter.notifyDataSetChanged();
             }
         });
+    }
+
+    @Override
+    public void onItemClicked(int position) {
+        ListFragmentDirections.ActionListFragmentToDetailFragment action = ListFragmentDirections.actionListFragmentToDetailFragment();
+        action.setPosition(position);
+        navController.navigate(action);
     }
 }

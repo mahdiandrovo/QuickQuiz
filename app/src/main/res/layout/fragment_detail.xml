@@ -14,6 +14,17 @@
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progressBar_detalsLoadProgress"
+            android:layout_width="90dp"
+            android:layout_height="90dp"/>
+
+        <ImageView
+            android:id="@+id/imageView_titleImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"/>
+
         <TextView
             android:id="@+id/textView_title"
             android:textStyle="bold"

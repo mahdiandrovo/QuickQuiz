@@ -73,7 +73,7 @@ public class DetailFragment extends Fragment implements View.OnClickListener {
 
         textView_Title = (TextView) view.findViewById(R.id.textView_title);
         textView_Difficulty = (TextView) view.findViewById(R.id.textView_difficulty);
-        textView_TotalQuestion = (TextView) view.findViewById(R.id.textView_totalQuestion);
+        textView_TotalQuestion = (TextView) view.findViewById(R.id.textView_totalQuestions);
 
         button_StartQuiz = (Button) view.findViewById(R.id.button_startQuiz);
         button_StartQuiz.setOnClickListener(this);
@@ -88,8 +88,9 @@ public class DetailFragment extends Fragment implements View.OnClickListener {
                 QuizListModel quizListModel = quizListModels.get(position);
                 Glide.with(view).load(quizListModel.getImage()).into(imageView_TopicImage);
                 textView_Title.setText(quizListModel.getTitle());
-                //textView_TotalQuestion.setText("10");
+                textView_TotalQuestion.setText(String.valueOf(quizListModel.getQuestions()));
                 textView_Difficulty.setText(quizListModel.getDifficulty());
+                
                 Handler handler = new Handler();
                 handler.postDelayed(new Runnable() {
                     @Override
@@ -99,11 +100,8 @@ public class DetailFragment extends Fragment implements View.OnClickListener {
                 }, 2000);
                 quizId = quizListModel.getQuizId();
                 totalQuestions = quizListModel.getQuestions();
-
-
             }
         });
-
     }
 
     @Override
